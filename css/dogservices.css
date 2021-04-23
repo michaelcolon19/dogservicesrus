@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 255px 0 255px;
+  /* width: 1200px; */
+  max-width: 1200px;
+  background: linear-gradient(90deg, rgb(170, 170, 170,.75) 0%, rgba(237,237,244,1) 50%, rgb(170, 170, 170,.75) 100%);
+  /* background: linear-gradient(90deg,  rgba(237,237,244,1) 0%, rgb(170, 170, 170,.75) 50%, rgba(237,237,244,1) 100%);   */
+}
+
+p a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Header/logo Title */
+.header {
+  font-family: 'Kaushan Script', cursive;
+  padding: 5px;
+  text-align: center;
+  background-color: #aaa;
+  color: black;
+  /* background-image: url("../images/header-dogs.jpeg") */
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 70px;
+}
+
+.header p {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Active Menu link */
+.navbar .active {
+  background-color: #666;
+}
+
+/* Right-aligned link */
+.navbar .right {
+  float: right;
+}
+
+/* Right-aligned Active link */
+.navbar .right-active {
+  float: right;
+  background-color: #666;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  width: 350px;
+  background-color: #dad6d6;
+  padding: 0 20px 20px 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 0 20px 0 20px;
+}
+
+.main-services {
+    flex: 70%;
+    background-color: white;
+    padding: 0 20px 0 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 10px;
+  height: 203px;
+}
+
+/* Footer */
+.footer {
+  background-image: url("../images/footer-bck-2.png");
+  padding: 30px;
+  text-align: center;
+  background-color: #ddd;
+  color: red;
+  font-family: 'Kaushan Script', cursive;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/**********************************************************/
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.column-contact {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after,
+.service-div {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Create four equal columns that floats next to each other */
+.column-clients {
+  float: left;
+  width: 25%;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Center website */
+.main-clients {
+  max-width: 1200px;
+  margin: auto;
+}
+
+a.button {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+.side-img {
+  width: 100%; 
+  height:183px;
+}
+
+.service-img {
+  height:150px;
+  float: left;
+  padding: 0 10px 10px 0;
+}
+
+.about-img {
+  width: 100%; 
+}
+
+.section-header {
+  text-align: center;
+}
