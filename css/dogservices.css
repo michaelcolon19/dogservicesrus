@@ -5,7 +5,8 @@
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0 255px 0 255px;
+  /* margin: 0 255px 0 255px; */
+  margin: 0 auto;
   /* width: 1200px; */
   max-width: 1200px;
   background: linear-gradient(90deg, rgb(170, 170, 170,.75) 0%, rgba(237,237,244,1) 50%, rgb(170, 170, 170,.75) 100%);
@@ -15,6 +16,13 @@ body {
 p a {
   text-decoration: none;
   font-weight: bold;
+}
+
+.page-wrap { 
+  width: 98%; 
+  margin: 0 auto; 
+  background: url(../images/bond-paper.jpg); 
+  padding: 5px 26px 0 26px;
 }
 
 /* Header/logo Title */
@@ -90,7 +98,7 @@ p a {
 
 /* Main column */
 .main {
-  flex: 70%;
+  flex: 60%;
   background-color: white;
   padding: 0 20px 0 20px;
 }
@@ -122,9 +130,11 @@ p a {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .row {
     flex-direction: column;
+    width: 100%;
+    display: block;
   }
 }
 
@@ -150,6 +160,12 @@ p a {
   width: 50%;
   margin-bottom: 16px;
   padding: 0 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column-clients {
+  float: left;
+  width: 25%;
 }
 
 .card {
@@ -189,30 +205,36 @@ p a {
   background-color: #555;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .column {
     width: 100%;
     display: block;
   }
-}
 
-/* Create four equal columns that floats next to each other */
-.column-clients {
-  float: left;
-  width: 25%;
+  .column-contact {
+    width: 100%;
+    display: block;
+  }
+
+  .column-clients {
+    display:block;
+    width: 100%;
+    padding-bottom: 15px;
+  }
 }
 
 /* Content */
 .content {
   background-color: white;
   padding: 10px;
+  height:100%;
 }
 
 /* Center website */
-.main-clients {
+/* .main-clients {
   max-width: 1200px;
   margin: auto;
-}
+} */
 
 a.button {
     text-decoration: none;
