@@ -5,9 +5,7 @@
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /* margin: 0 255px 0 255px; */
   margin: 0 auto;
-  /* width: 1200px; */
   max-width: 1200px;
   background: linear-gradient(90deg, rgb(170, 170, 170,.75) 0%, rgba(237,237,244,1) 50%, rgb(170, 170, 170,.75) 100%);
   /* background: linear-gradient(90deg,  rgba(237,237,244,1) 0%, rgb(170, 170, 170,.75) 50%, rgba(237,237,244,1) 100%);   */
@@ -205,23 +203,7 @@ p a {
   background-color: #555;
 }
 
-@media screen and (max-width: 800px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
 
-  .column-contact {
-    width: 100%;
-    display: block;
-  }
-
-  .column-clients {
-    display:block;
-    width: 100%;
-    padding-bottom: 15px;
-  }
-}
 
 /* Content */
 .content {
@@ -229,12 +211,6 @@ p a {
   padding: 10px;
   height:100%;
 }
-
-/* Center website */
-/* .main-clients {
-  max-width: 1200px;
-  margin: auto;
-} */
 
 a.button {
     text-decoration: none;
@@ -259,4 +235,23 @@ a.button {
 
 .section-header {
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  .column-contact {
+    width: 100%;
+    display: block;
+  }
+
+  .column-clients {
+    display:block;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
 }
